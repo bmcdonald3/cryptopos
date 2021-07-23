@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Card, CardActions, CardContent, Grid, TextField, Typography } from '@material-ui/core';
 import React from 'react'
 import { Link } from 'react-router-dom';
