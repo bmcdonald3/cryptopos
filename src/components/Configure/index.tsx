@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { Button, Grid, TextField, Typography } from '@material-ui/core';
 import { useHistory } from 'react-router-dom'
@@ -12,7 +13,8 @@ const Configure: React.FC = () => {
 
     const [values, setValues] = React.useState<State>({
         itemName: '',
-        cost: ''
+        cost: '',
+        items: []
     })
 
     const handleChange = (prop: keyof State) => (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,7 +44,7 @@ const Configure: React.FC = () => {
                 {
                     //TODO add functionality to add items to an array that you will display on transactions page
                 }
-                <Button fullWidth size='large' onClick={() => console.log('added')}>
+                <Button fullWidth size='large'>
                     Add item
                 </Button>
             </Grid>
