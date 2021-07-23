@@ -1,8 +1,10 @@
 // @ts-nocheck
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, Button } from '@material-ui/core';
 import React from 'react';
+import { useHistory } from 'react-router';
 
 const Confirmed: React.FC = () => {
+    const history = useHistory();
     const pictureStyle = {
         width: '50%',
         display: 'block',
@@ -23,6 +25,11 @@ const Confirmed: React.FC = () => {
                         style={pictureStyle}
                     />
                 </Grid>
+                <Grid item sm={3} />
+                <Grid item sm={6} xs={12}>
+                    <Button align='center' fullWidth onClick={()=>{history.push('/transaction')}}>Make another transaction</Button>
+                </Grid>
+                <Grid item sm={3} />
             </Grid>
             
         </>

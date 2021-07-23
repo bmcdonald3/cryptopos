@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { Button, Card, CardActions, CardContent, Grid, TextField, Typography } from '@material-ui/core';
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 interface State {
     amount: string;
@@ -9,6 +9,7 @@ interface State {
 
 const Transaction: React.FC = () => {
     const totalCost = 5;
+    const history = useHistory();
 
     const [values, setValues] = React.useState<State>({
         amount: ''
@@ -22,6 +23,7 @@ const Transaction: React.FC = () => {
         <>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
+                    <Button size='small' onClick={() => {history.push('/')}}>Home</Button>
                     <Typography variant='h2' align='center'>
                         Order
                     </Typography>
