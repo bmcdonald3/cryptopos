@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cryptopos/static/js/main.0d5592f8.chunk.js",
-    "main.js.map": "/cryptopos/static/js/main.0d5592f8.chunk.js.map",
+    "main.js": "/cryptopos/static/js/main.a7516ef5.chunk.js",
+    "main.js.map": "/cryptopos/static/js/main.a7516ef5.chunk.js.map",
     "runtime-main.js": "/cryptopos/static/js/runtime-main.139cb92f.js",
     "runtime-main.js.map": "/cryptopos/static/js/runtime-main.139cb92f.js.map",
     "static/js/2.f3fc15bc.chunk.js": "/cryptopos/static/js/2.f3fc15bc.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.139cb92f.js",
     "static/js/2.f3fc15bc.chunk.js",
-    "static/js/main.0d5592f8.chunk.js"
+    "static/js/main.a7516ef5.chunk.js"
   ]
 }
