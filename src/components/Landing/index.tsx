@@ -29,7 +29,7 @@ const Landing: React.FC = () => {
                     </Typography>
                 </Grid>
                 <Grid item sm={4} />
-                <Grid item sm={4}>
+                <Grid item sm={4} xs={12}>
                     <Button size='large' variant='contained' fullWidth onClick={() => history.push('/config')}>
                         Get Started
                     </Button>
