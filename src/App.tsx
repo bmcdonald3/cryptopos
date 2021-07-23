@@ -5,6 +5,7 @@ import Landing from './components/Landing'
 import Configure from './components/Configure'
 import Transaction from './components/Transaction';
 import Qrcode from './components/Qrcode';
+import Confirmed from './components/Confirmed';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/config' exact component={Configure} />
           <Route path='/transaction' exact component={Transaction} />
           <Route path='/qr/:cost' exact component={Qrcode} />
+          <Route path='/confirmed' exact component={Confirmed} />
         </Switch>
       </Router>
     </div>

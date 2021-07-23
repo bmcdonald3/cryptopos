@@ -27,7 +27,7 @@ const Qrcode: React.FC = () => {
 
                 <Grid item sm={3} />
                 <Grid item sm={6} xs={12}>
-                    <img src={qr} style={pictureStyle} alt='qr code'></img>
+                    <img src={qr} style={pictureStyle} alt='qr code' onClick={()=>{history.push('/confirmed')}}></img>
                 </Grid>
                 <Grid item sm={3} />
                 <Grid item sm={3} />
