@@ -1,7 +1,8 @@
-// @ts-nocheck
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { Grid, Button, Typography, CssBaseline } from '@material-ui/core';
+import Paycoin from '../Paycoin/Paycoin';
+
 
 const Landing: React.FC = () => {
     const history = useHistory();
@@ -36,6 +37,7 @@ const Landing: React.FC = () => {
                 </Grid>
                 <Grid item sm={4} />
             </Grid>
+            <Paycoin />
         </div>
     </>)
 }
